@@ -1,0 +1,53 @@
+Object.assign(strings.en, {
+    "hero.tagline": "student dev - web and microcontrollers",
+    "hero.bio": "I'm a Polish technikum student who likes building things: from C++ on a microcontroller, through Linux tools, to the website you're looking at right now. No frameworks and no backend here btw (I hate PHP, so some parts of this site that should be handled on the backend just aren't).",
+
+    "skills.title": "skills",
+    "skills.web.title": "Web",
+    "skills.web.desc": "HTML, CSS, MySQL and JavaScript.",
+    "skills.embedded.title": "Embedded",
+    "skills.embedded.desc": "C++ on ESP32 microcontrollers: displays, buttons and sensors.",
+    "skills.go.desc": "Small tools and experiments. It's fast and simple.",
+    "skills.python.desc": "Scripts and automation for when something needs to work quickly. Useful for AI.",
+    "skills.linux.title": "Linux & self-hosting",
+    "skills.linux.desc": "Fedora on everything. Running my own server with nginx (for now) and a Cloudflare Tunnel.",
+    "skills.tools.title": "Tools & making",
+    "skills.tools.desc": "Git and JetBrains IDEs for code. A Creality 3D printer for when a project needs a physical part, or just for fun.",
+    "chip.3dPrint": "3D printing",
+
+    "eduInt.title": "education and interests",
+    "edu.title": "education",
+    "edu.school": "Technikum, technik programista",
+    "edu.desc": "INF.03 (web development and databases) passed, INF.04 next.",
+    "interests.title": "interests",
+    "interests.ai": "how AI works",
+    "interests.hardware": "science behind hardware",
+    "interests.selfHost": "self-hosting",
+});
+
+Object.assign(strings.pl, {
+    "hero.tagline": "uczeń programista - web i mikrokontrolery",
+    "hero.bio": "Chodze do technikum i lubię budować różne rzeczy: od C++ na mikrokontrolerze, przez narzędzia na Linuxa, aż po stronę, którą właśnie oglądasz - btw bez frameworków i bez backendu (nie przepadam za PHP, więc niektóre części tej strony powinny być na backendzie, ale nie są).",
+
+    "skills.title": "umiejętności",
+    "skills.web.title": "Web",
+    "skills.web.desc": "HTML, CSS, MySQL i JavaScript.",
+    "skills.embedded.title": "Embedded",
+    "skills.embedded.desc": "C++ na mikrokontrolerach ESP32: wyświetlacze, przyciski i czujniki.",
+    "skills.go.desc": "Małe narzędzia i eksperymenty. Szybki i prosty.",
+    "skills.python.desc": "Skrypty i automatyzacja, kiedy coś ma szybko działać. Przydatny do AI.",
+    "skills.linux.title": "Linux i self-hosting",
+    "skills.linux.desc": "Fedora na wszystkim. Własny serwer z nginx (na razie) i Cloudflare Tunnel.",
+    "skills.tools.title": "Narzędzia i tworzenie",
+    "skills.tools.desc": "Git i IDE od JetBrains do kodu. Drukarka 3D Creality, kiedy projekt potrzebuje fizycznej części, albo po prostu for fun",
+    "chip.3dPrint": "druk 3D",
+
+    "eduInt.title": "edukacja i zainteresowania",
+    "edu.title": "edukacja",
+    "edu.school": "Technikum, technik programista",
+    "edu.desc": "Zdany INF.03 (strony internetowe i bazy danych), następny INF.04.",
+    "interests.title": "zainteresowania",
+    "interests.ai": "jak działa AI",
+    "interests.hardware": "fizyka za hardwarem",
+    "interests.selfHost": "self-hosting",
+});

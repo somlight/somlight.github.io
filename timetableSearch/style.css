@@ -1,0 +1,245 @@
+main {
+    width: min(1400px, 100%);
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 16px;
+    align-items: start;
+}
+
+.panel {
+    padding: 20px;
+    background-color: var(--surface);
+    border-radius: 24px;
+}
+
+h2, h3 {
+    margin: 0 0 12px;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: var(--muted);
+}
+
+.hint {
+    margin: 8px 0 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.disclaimer {
+    margin: 16px 0 0;
+    color: var(--muted);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.inputRow {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+#schoolForm .inputRow {
+    margin-top: 0;
+}
+
+input, select {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 16px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background-color: var(--bg);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.8rem;
+}
+
+input:focus, select:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: -1px;
+}
+
+.btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 999px;
+    background-color: var(--accent-container);
+    color: var(--on-accent-container);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn.ghost {
+    background-color: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: wait;
+}
+
+#infoBox {
+    min-height: 1.2em;
+    margin: 12px 0 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+#infoBox.error {
+    color: #ff8a80;
+}
+
+[data-theme="light"] #infoBox.error {
+    color: #b3261e;
+}
+
+#classList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.classBtn {
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background-color: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.classBtn:hover {
+    background-color: var(--surface-high);
+}
+
+.classBtn.active {
+    background-color: var(--accent-container);
+    border-color: transparent;
+    color: var(--on-accent-container);
+    font-weight: 600;
+}
+
+#content {
+    min-width: 0;
+}
+
+#tableCon {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+
+th {
+    padding: 6px;
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.periodCell {
+    width: 1%;
+    white-space: nowrap;
+}
+
+.periodNr {
+    display: block;
+    color: var(--text);
+    font-size: 1rem;
+}
+
+.periodHours {
+    display: block;
+    font-weight: normal;
+    font-size: 0.75rem;
+}
+
+td {
+    height: 1px;
+    vertical-align: top;
+    min-width: 170px;
+}
+
+.slot {
+    display: flex;
+    gap: 4px;
+    height: 100%;
+}
+
+.lesson {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px;
+    background-color: var(--surface-high);
+    border-radius: 12px;
+}
+
+.groupTag {
+    align-self: flex-start;
+    padding: 1px 8px;
+    border-radius: 999px;
+    background-color: var(--accent-container);
+    color: var(--on-accent-container);
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.subject {
+    font-weight: 600;
+    font-size: 0.9rem;
+    overflow-wrap: break-word;
+}
+
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 8px;
+    white-space: nowrap;
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+.meta span[title]:not([title=""]) {
+    cursor: help;
+}
+
+@media (max-width: 820px) {
+    #app {
+        grid-template-columns: 1fr;
+    }
+}
+
+#savedRow[hidden] {
+    display: none;
+}
+
+.slot:has(.lesson + .lesson) .subject {
+    font-size: 0.8rem;
+}

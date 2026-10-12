@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somlight.dev</title>
+    <meta name="description" content="somlight - student developer: web, embedded C++, Linux and self-hosting.">
+
+    <link rel="stylesheet" href="/theme.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="/layout.js"></script>
+</head>
+<body>
+<main>
+
+    <section id="hero" class="card">
+        <div id="catCon">
+            <span id="petCnt"></span>
+            <img src="cat.png" alt="" id="cat">
+        </div>
+        <p id="nickname">somlight<span id="blinker">_</span></p>
+        <p class="tagline" data-translation-id="hero.tagline">student dev - web and microcontrollers</p>
+        <p class="bio" data-translation-id="hero.bio">I'm a Polish technikum student who likes building things: from C++ on a microcontroller, through Linux tools, to the website you're looking at right now. No frameworks and no backend here btw (I hate PHP, so some parts of this site that should be handled on the backend just aren't).</p>
+        <div class="heroLinks">
+            <a class="pillBtn" href="https://github.com/somlight">
+                <img src="github.png" alt="" id="linkIcon">
+                GitHub
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2 data-translation-id="skills.title">skills</h2>
+        <div class="grid">
+            <article class="card">
+                <div class="badge web">&lt;/&gt;</div>
+                <h3 data-translation-id="skills.web.title">Web</h3>
+                <p data-translation-id="skills.web.desc">HTML, CSS, MySQL and JavaScript.</p>
+                <ul class="chips"><li>HTML</li><li>CSS</li><li>MySQL</li><li>JavaScript</li></ul>
+            </article>
+
+            <article class="card">
+                <div class="badge cpp">C++</div>
+                <h3 data-translation-id="skills.embedded.title">Embedded</h3>
+                <p data-translation-id="skills.embedded.desc">C++ on ESP32 microcontrollers: displays, buttons and sensors.</p>
+                <ul class="chips"><li>C++</li><li>ESP32</li></ul>
+            </article>
+
+            <article class="card">
+                <div class="badge go">Go</div>
+                <h3>Go</h3>
+                <p data-translation-id="skills.go.desc">Small tools and experiments. It's fast and simple.</p>
+                <ul class="chips"><li>Go</li></ul>
+            </article>
+
+            <article class="card">
+                <div class="badge py">Py</div>
+                <h3>Python</h3>
+                <p data-translation-id="skills.python.desc">Scripts and automation for when something needs to work quickly. Useful for AI.</p>
+                <ul class="chips"><li>Python</li><li>AI</li></ul>
+            </article>
+
+            <article class="card">
+                <div class="badge linux">$_</div>
+                <h3 data-translation-id="skills.linux.title">Linux &amp; self-hosting</h3>
+                <p data-translation-id="skills.linux.desc">Fedora on everything. Running my own server with nginx (for now) and a Cloudflare Tunnel.</p>
+                <ul class="chips"><li>Fedora</li><li>nginx</li><li>Cloudflare</li></ul>
+            </article>
+
+            <article class="card">
+                <div class="badge tools">⚙</div>
+                <h3 data-translation-id="skills.tools.title">Tools &amp; making</h3>
+                <p data-translation-id="skills.tools.desc">Git and JetBrains IDEs for code. A Creality 3D printer for when a project needs a physical part, or just for fun.</p>
+                <ul class="chips"><li>Git</li><li>JetBrains</li><li data-translation-id="chip.3dPrint">3D printing</li></ul>
+            </article>
+        </div>
+    </section>
+
+    <section>
+        <h2 data-translation-id="eduInt.title">education and interests</h2>
+        <div class="grid two">
+            <article class="card">
+                <h3 data-translation-id="edu.title">education</h3>
+                <p class="school" data-translation-id="edu.school">Technikum, technik programista</p>
+                <p data-translation-id="edu.desc">INF.03 (web development and databases) passed, INF.04 next.</p>
+            </article>
+            <article class="card">
+                <h3 data-translation-id="interests.title">interests</h3>
+                <ul class="chips big">
+                    <li data-translation-id="interests.ai">how AI works</li>
+                    <li data-translation-id="interests.hardware">science behind hardware</li>
+                    <li data-translation-id="interests.selfHost">self-hosting</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+</main>
+<script src="strings.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
